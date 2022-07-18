@@ -1,0 +1,452 @@
+// === Mixins [ Шаблоны классов стилей, используемых на всех страницах ]===
+
+// используется для одинаковых отступов внутри секций
+:root {
+    --section_padding: 6rem;
+    --fixed_header_margin: 5rem;
+    --header_height: 7rem;
+
+    @media ($media_sm) {
+        --section_padding: 3rem;
+    }
+}
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: $color_body_bg;
+    color: $color_black_main;
+
+    &.hideScroll {
+        overflow-y: hidden;
+    }
+
+    @media ($media_xl) {
+        font-size: 16px;
+    }
+
+    @media ($media_lg) {
+        font-size: 15px;
+    }
+
+    @media ($media_md) {
+        font-size: 14px;
+    }
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+
+    &.visible {
+        visibility: visible;
+        opacity: 0.35;
+    }
+}
+
+.visually_hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.btn {
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn_primary {
+    background-color: $color_white;
+    padding: 1rem 1.5rem;
+    box-shadow: 0px 21px 22px -13px rgba(62, 84, 216, 0.22);
+}
+
+.btn_blue {
+    background-color: $color_blue;
+    color: $color_white;
+    box-shadow: 0px 21px 22px -13px rgba(62, 84, 216, 0.51);
+    padding: 1.66rem 2.88rem;
+
+    &:hover, &:focus {
+        background-color: $color_blue_hover;
+    }
+
+    @media ($media_sm) {
+        width: 100%;
+        padding: 2rem 0;
+    }
+}
+
+.btn_bordered {
+    background: $color_bg_secondary;
+    border: 2px solid $color_border;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+
+    text-decoration: none;
+    color: $color_black_main;
+
+    svg {
+        height: 2.6rem;
+        width: 2.6rem;
+        margin-right: 0.9rem;
+    }
+
+    span {
+        font-weight: 500;
+    }
+}
+
+.btn_subscribe {
+    background-color: $color_white;
+    box-shadow: 0px 21px 22px -13px rgba(62, 84, 216, 0.22);
+    padding: 1.2rem 1.5rem;
+
+    @media ($media_sm) {
+        padding: 1.2rem 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        background-color: $color_blue;
+
+        svg {
+            fill: $color_white;
+        }
+
+        span {
+            color: $color_white;
+        }
+    }
+
+    svg {
+        height: 1.5rem;
+        width: 1.5rem;
+        fill: $color_blue;
+        margin-right: 1rem;
+    }
+
+    span {
+        color: $color_blue;
+    }
+
+}
+
+.page_header {
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 1.25;
+    color: $color_black_title;
+
+    @media ($media_sm) {
+        font-size: 2.2rem;
+    }
+
+    strong {
+        color: $color_blue;
+    }
+}
+
+.section_header {
+    font-weight: bold;
+    font-size: 2.77rem;
+    color: $color_black_title;
+    text-align: center;
+
+    @media ($media_sm) {
+        font-size: 2.15rem;
+    }
+
+}
+
+.founder_header {
+    font-weight: 600;
+    font-size: 2.66rem;
+    line-height: 1.3;
+    color: $color_black_title;
+    opacity: 0.9;
+
+    @media ($media_sm) {
+        font-size: 2.15rem;
+        text-align: center;
+    }
+}
+
+.card_header {
+    font-size: 1.66rem;
+    color: $color_black_title;
+    opacity: 0.9;
+}
+
+span.mark {
+    position: relative;
+    white-space: nowrap;
+
+    span {
+        position: inherit;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        height: 0.5rem;
+        width: 100%;
+        background-color: $color_yellow;
+        bottom: 0;
+        z-index: 0;
+        opacity: 0.99;
+    }
+}
+
+.scroll_block_dummy {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+    visibility: hidden;
+}
+
+.bg_gradient {
+    background: $color_gradient_main;
+}
+
+.bg_gradient_reverse {
+    background: $color_gradient_main_reverse;
+}
+
+.checkbox_custom {
+    position: relative;
+    width: 0px;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+    }
+
+    &::before {
+        width: 1.33rem;
+        height: 1.33rem;
+        border-radius: 0.3rem;
+        background-color: $color_white;
+        border: 2px solid lighten($color_gray, 20%);
+    }
+
+    &:checked {
+        &::before {
+            border-radius: 0.3rem;
+            background-color: $color_blue;
+            border: 2px solid $color_blue;
+        }
+
+        &::after {
+            background-color: $color_white;
+            border-radius: 2px;
+            width: 0.5rem;
+            height: 0.5rem;
+            transform: translate(85%, 80%);
+        }
+    }
+}
+
+
+
+.input_text {
+    background-color: $color_bg_secondary;
+    border: 1px solid $color_border;
+    border-radius: 0.5rem;
+    padding: 0.8rem 1.3rem;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+
+    &:hover, &:focus {
+        border-color: $color_border_active;
+    }
+
+    &:disabled {
+        background: $color_input_disabled_bg;
+        border: 1px solid $color_input_disabled_border;
+        color: $color_gray;
+    }
+}
+
+.checkbox {
+
+}
+
+.checkbox-toggle {
+    cursor: pointer;
+
+    @media ($media_sm) {
+        cursor: initial;
+    }
+
+    &__descr {
+        font-weight: 500;
+        font-size: 1.1rem;
+        padding: 0 1.1rem;
+
+        &--light {
+            color: $color_gray;
+        }
+    }
+
+    &__text {
+
+        &--primary {
+            color: $color_blue;
+        }
+    }
+}
+
+.checkbox-toggle__input {
+    position: fixed;
+    transform: scale(0);
+
+    & + span {
+        --color: #{$color_gray};
+        --size: 26px;
+
+        flex-shrink: 0;
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 55px;
+        height: calc(var(--size) + 4px);
+        background: var(--color);
+        border: 2px solid var(--color);
+        border-radius: calc((var(--size) + 4px) / 2);
+        //transform: scale(0.9);
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: var(--size);
+            height: var(--size);
+            top: 50%;
+            left: 2px;
+            transform: translateY(-50%);
+            background: $color-white;
+            border-radius: 50%;
+            transition: left .2s ease-out;
+        }
+
+    }
+
+    &:checked {
+        & + span {
+            --color: #{$color_blue};
+
+            &::before {
+                left: calc(100% - var(--size) - 2px);
+            }
+        }
+    }
+}
+
+.btnShowAll {
+    background-color: unset;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    color: $color_blue;
+
+    border-bottom: 1px dashed $color_svg_eye;
+    padding: 0.3rem 0;
+
+    // .btnShowAll--active
+
+    &--active {
+        .btnShowAll__icon {
+            transform: rotate(180deg);
+        }
+    }
+
+    // .btnShowAll__text
+
+    &__text {
+        font-weight: 600;
+    }
+
+    // .btnShowAll__icon
+
+    &__icon {
+        margin-left: 0.6rem;
+        width: 0.7rem;
+        height: 0.7rem;
+        fill: currentColor;
+    }
+}
+
+.labelLink {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    color: $color_blue;
+    padding: 0.6rem 1rem;
+    border: 1px solid $color_svg_eye;
+    border-radius: 0.5rem;
+    background-color: $color_white;
+
+    &:hover, &--active {
+        color: $color_white;
+        background-color: $color_blue;
+        border-color: $color_blue;
+    }
+}
+
+.subscribe-changer {
+    margin-bottom: 2.75rem;
+
+    padding: 1.75rem;
+    background: $color_white;
+    border: 1px solid $color_border;
+    box-shadow: 0px 18px 16px -13px rgba(62, 84, 216, 0.1);
+    border-radius: 1rem;
+
+    text-align: center;
+
+    .checkbox-toggle {
+        @media ($media_sm) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            &__descr {
+                padding: 0;
+            }
+    
+            &__toggle {
+                margin: 0.8rem 0;
+            }
+        }
+    }
+}
+
+// === / Mixins ===

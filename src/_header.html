@@ -1,0 +1,109 @@
+<header class="section-outer section-header">
+    <div class="section-inner header">
+
+        <div class="header-logo">
+            <div class="burger" data-burger="button">
+                <img class="burger-closed" src="./img/burger_closed.svg" alt="Иконка закрытого бургер-меню">
+                <img class="burger-opened" src="./img/burger_opened.svg" alt="Иконка открытого бургер-меню">
+            </div>
+            <a class="logo" href="./">
+                <img class="logo-icon" src="./img/logo.svg" alt="Логотип">
+            </a>
+            <div class="operation">
+
+                <label for="langMobile">
+                    <img class="burger-closed" src="./img/burger_user.svg" alt="Иконка закрытого бургер-меню">
+                </label>
+
+                <input type="checkbox" id="langMobile" class="visually_hidden">
+
+                <div class="dropdown">
+                    <input type="checkbox" id="openLangMobile" class="visually_hidden">
+                    <div class="menu">
+                        <a data-modal="modal_auth">
+                            <span>Вход</span>    
+                        </a>
+                        <a data-modal="modal_reg">
+                            <span>Регистрация</span>
+                        </a>
+                        <a href="#">
+                            <label for="openLangMobile">
+                                <span>Русский</span>
+                                <svg><use xlink:href="img/main.svg#icon-caret-down"></use></svg>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <span class="active">Русский</span>
+                        <span>English</span>
+                        <span>Deutch</span>
+                        <span>Polski</span>
+                        <span>Беларуская</span>
+                        <span>Русский</span>
+                        <span>English</span>
+                        <span>Deutch</span>
+                        <span>Polski</span>
+                        <span>Беларуская</span>
+                        <span>Русский</span>
+                        <span>English</span>
+                        <span>Deutch</span>
+                        <span>Polski</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-controls" data-burger="menu">
+            <nav class="header-controls-links">
+                <ul class="menu">
+                    <li class="menu-item @@pageCounselor"><a href="./counselor.html"><span>Советник</span></a></li>
+                    <li class="menu-item @@pagePortfolio"><a href="./"><span>Мой портфель</span></a></li>
+                    <li class="menu-item @@pageCrypt"><a href="./cryptocurrency.html"><span>Криптовалюта</span></a></li>
+                    <li class="menu-item @@pageTarrifs"><a href="./tarrifs.html"><span>Тарифы</span></a></li>
+                    <li class="menu-item @@pageFaq"><a href="./faq.html"><span>Faq</span></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-operation">
+            <div class="header-operation-lang">
+                <input type="checkbox" id="langDesktop" class="visually_hidden">
+
+                <label for="langDesktop">
+                    <span>Русский</span>
+                    <svg><use xlink:href="img/main.svg#icon-caret-down"></use></svg>
+                </label>
+
+                <div class="dropdown">
+                    <div class="content">
+                        <span class="active">Русский</span>
+                        <span>English</span>
+                        <span>Deutch</span>
+                        <span>Polski</span>
+                        <span>Беларуская</span>
+                        <span>Русский</span>
+                        <span>English</span>
+                        <span>Deutch</span>
+                        <span>Polski</span>
+                        <span>Беларуская</span>
+                        <span>Русский</span>
+                        <span>English</span>
+                        <span>Deutch</span>
+                        <span>Polski</span>
+                    </div>
+                </div>
+
+            </div>
+            <button class="header-operation-btn btn btn_primary">
+                <div class="header-operation-btn-icon">
+                    <svg><use xlink:href="img/main.svg#icon-user"></use></svg>
+                </div>
+                <div class="header-operation-btn-links">
+                    <a href="#" data-modal="modal_auth">Вход</a>
+                    <a href="#" data-modal="modal_reg">Регистрация</a>
+                </div>
+            </button>
+        </div>
+
+    </div>
+</header>

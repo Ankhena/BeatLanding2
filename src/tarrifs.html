@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+
+		@@include('_head.html', {
+			"title": "BeatLanding - Советник"
+		})
+
+	</head>
+	<body>
+
+		@@include("_header.html", {
+			"pageCounselor": "",
+			"pagePortfolio": "",
+            "pageCrypt": "",
+			"pageTarrifs": "active",
+			"pageFaq": "",
+		})
+
+        <section class="section-outer section-tarrifs">
+            <div class="section-inner tarrifs">
+                <div class="tarrifs-header">
+                    <h1 class="page_header">Тарифы</h1>
+                </div>
+                <div class="tarrifs-subheader">
+                    <p>Для вашего удобства мы подготовили 4 тарифа, каждый найдет для себя именно то, <strong>что ему подходит</strong></p>
+                </div>
+
+                <div class="subscribe-changer">
+                    <label class="checkbox-toggle">
+                        <span class="checkbox-toggle__descr">Подписка на месяц</span>
+                        <input class="checkbox-toggle__input" type="checkbox">
+                        <span class="checkbox-toggle__toggle"></span>
+                        <span class="checkbox-toggle__descr checkbox-toggle__descr--light">Год <span class="checkbox-toggle__text checkbox-toggle__text--primary">(экономия до 30%)</span></span>
+                    </label>
+                </div>
+                
+                <div class="tarrifs-cards">
+                    <div class="tarrifs-cards-card blue">
+                        <div class="tarrifs-cards-card-header">
+                            <h3>All-in-one – рассылка USA+РФ+Европа</h3>
+                        </div>
+                        <div class="tarrifs-cards-card-cost">
+                            <p>
+                                <strong>Бесплатно</strong>
+                                <span>В течении 30 дней</span>
+                            </p>
+                        </div>
+                        <div class="tarrifs-cards-card-text">
+                            <p>
+                                Весь функционал платформы без ограничений, в течение 15 дней. 
+                                Никаких привязок карты и данных. Пробуйте, оценивайте, пользуйтесь.
+                            </p>
+                        </div>
+                        <div class="tarrifs-cards-card-btn">
+                            <button class="btn btn_tarrifs">Выбрать тариф</button>
+                        </div>
+                    </div>
+                    <div class="tarrifs-cards-card green">
+                        <div class="tarrifs-cards-card-header">
+                            <h3>Свой портфель</h3>
+                        </div>
+                        <div class="tarrifs-cards-card-cost costSwitcher">
+                            <p>
+                                <strong>290 руб.</strong>
+                                <span>/ месяц</span>
+                            </p>
+                            <button class="btnShowAll labelLink labelLink--active btnShowAll--disabled">
+                                <span class="btnShowAll__text">Экономия 20%</span>
+                            </button>
+                        </div>
+                        <div class="tarrifs-cards-card-text">
+                            <p>
+                                Заведите свой собственный портфель из акций и ETF, следите за своими инвестициями в режиме онлайн, 
+                                анализируйте данные и сравнивайте результаты с Бенчмарком. Просто, наглядно, удобно. 
+                            </p>
+                        </div>
+                        <div class="tarrifs-cards-card-btn">
+                            <button class="btn btn_tarrifs">Выбрать тариф</button>
+                        </div>
+                    </div>
+                    <div class="tarrifs-cards-card red">
+                        <div class="tarrifs-cards-card-header">
+                            <h3>Советник</h3>
+                        </div>
+                        <div class="tarrifs-cards-card-cost costSwitcher">
+                            <p>
+                                <strong>690 руб.</strong>
+                                <span>/ месяц</span>
+                            </p>
+                            <button class="btnShowAll labelLink labelLink--active btnShowAll--disabled">
+                                <span class="btnShowAll__text">Экономия 30%</span>
+                            </button>
+                        </div>
+                        <div class="tarrifs-cards-card-text">
+                            <p>
+                                Управляйте портфелем на автопилоте. 
+                                Платформа поможет с выбором, проследит за купленными акциями, покажет, на что обратить внимание.
+                            </p>
+                        </div>
+                        <div class="tarrifs-cards-card-btn">
+                            <button class="btn btn_tarrifs">Выбрать тариф</button>
+                        </div>
+                    </div>
+                    <div class="tarrifs-cards-card yellow">
+                        <div class="tarrifs-cards-card-header">
+                            <h3>Все включено</h3>
+                        </div>
+                        <div class="tarrifs-cards-card-cost costSwitcher">
+                            <p>
+                                <strong>890 руб.</strong>
+                                <span>/ месяц</span>
+                            </p>
+                            <button class="btnShowAll labelLink labelLink--active btnShowAll--disabled">
+                                <span class="btnShowAll__text">Экономия 40%</span>
+                            </button>
+                        </div>
+                        <div class="tarrifs-cards-card-text">
+                            <p>Все функции платформы по выгодной цене. Легко и удобно. Никаких ограничений.</p>
+                        </div>
+                        <div class="tarrifs-cards-card-btn">
+                            <button class="btn btn_tarrifs">Выбрать тариф</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		@@include("_footer.html")
+
+	</body>
+</html>

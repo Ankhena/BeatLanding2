@@ -1,0 +1,149 @@
+<div class="modal" id="modal_auth">
+    <div class="modal-header">
+        <h2>Вход</h2>
+    </div>
+    <div class="modal-content error">
+        <div class="modal-content-group error">
+            <div class="modal-content-group-label">
+                <h4>E-mail</h4>
+                <span>На этот адрес мы отправим письмо с подтверждением</span>
+            </div>
+            <div class="modal-content-group-input">
+                <input type="email" placeholder="Beat@gmail.com" class="input_text">
+            </div>
+            <div class="modal-content-group-message">
+                <span>Введите корректный E-mail</span>
+            </div>
+        </div>
+        <div class="modal-content-group error">
+            <div class="modal-content-group-label">
+                <h4>Пароль</h4>
+                <strong data-changeModal="modal_pass">Забыли пароль?</strong>
+            </div>
+            <div class="modal-content-group-input icon">
+                <input type="password" class="input_text">
+                <svg class="eye eye_open"><use xlink:href="img/main.svg#eye"></use></svg>
+                <svg class="eye eye_close"><use xlink:href="img/main.svg#eye_slash"></use></svg>
+            </div>
+            <div class="modal-content-group-message">
+                <span>Это поле обязательно для заполнения</span>
+            </div>
+        </div>
+        <div class="modal-content-group">
+            <label class="modal-content-group-checkbox">
+                <input type="checkbox" class="checkbox_custom visually_hidden">
+                <strong>Запомнить меня</strong>
+            </label>
+        </div>
+        <div class="modal-content-group">
+            <div class="modal-content-group-error">
+                <p>Не все обязательные поля заполнены</p>
+            </div>
+        </div>
+        <div class="modal-content-btn half">
+            <button class="btn btn_blue">Войти</button>
+            <button class="btn btn_reverse" data-changeModal="modal_reg">У меня нет аккаунта</button>
+        </div>
+        <div class="modal-content-divider">
+            <span>Или</span>
+        </div>
+        <div class="modal-content-telegram">
+            <a href="#" class="btn btn_bordered">
+                <svg class=""><use xlink:href="img/main.svg#icon-telegram-fill"></use></svg>
+                <span>Авторизироваться через Telegram</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="modal_reg">
+    <div class="modal-header">
+        <h2>Регистрация</h2>
+    </div>
+    <div class="modal-content">
+        <div class="modal-content-group">
+            <div class="modal-content-group-label">
+                <h4>E-mail</h4>
+                <span>На этот адрес мы отправим письмо с подтверждением</span>
+            </div>
+            <div class="modal-content-group-input">
+                <input type="email" placeholder="Beat@gmail.com" class="input_text">
+            </div>
+            <div class="modal-content-group-message">
+                <span>Введите корректный E-mail</span>
+            </div>
+        </div>
+        <div class="modal-content-group">
+            <div class="modal-content-group-label">
+                <h4>Пароль</h4>
+                <span>Минимум 6 символов</span>
+            </div>
+            <div class="modal-content-group-input icon">
+                <input type="password" class="input_text">
+                <svg class="eye eye_open"><use xlink:href="img/main.svg#eye"></use></svg>
+                <svg class="eye eye_close"><use xlink:href="img/main.svg#eye_slash"></use></svg>
+            </div>
+            <div class="modal-content-group-message">
+                <span>Это поле обязательно для заполнения</span>
+            </div>
+        </div>
+        <div class="modal-content-group">
+            <div class="modal-content-group-label">
+                <h4>Повторите пароль</h4>
+            </div>
+            <div class="modal-content-group-input icon">
+                <input type="password" class="input_text">
+                <svg class="eye eye_open"><use xlink:href="img/main.svg#eye"></use></svg>
+                <svg class="eye eye_close"><use xlink:href="img/main.svg#eye_slash"></use></svg>
+            </div>
+            <div class="modal-content-group-message">
+                <span>Это поле обязательно для заполнения</span>
+            </div>
+        </div>
+        <div class="modal-content-btn">
+            <button class="btn btn_blue">Зарегистрироваться</button>
+        </div>
+        <div class="modal-content-link">
+            <span>Уже есть аккаунт? <strong data-changeModal="modal_auth">Авторизироваться</strong></span>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="modal_pass">
+    <div class="modal-header">
+        <h2>Забыли пароль?</h2>
+    </div>
+    <div class="modal-content success">
+        <div class="modal-content-group">
+            <div class="modal-content-group-text">
+                <p>Введите свой адрес электронной почты, мы отправим новый пароль</p>
+            </div>
+        </div>
+        <div class="modal-content-group">
+            <div class="modal-content-group-label">
+                <h4>E-mail</h4>
+                <span>На этот адрес мы отправим письмо с подтверждением</span>
+            </div>
+            <div class="modal-content-group-input">
+                <input type="email" placeholder="Beat@gmail.com" class="input_text">
+            </div>
+            <div class="modal-content-group-message">
+                <span>Введите корректный E-mail</span>
+            </div>
+        </div>
+        <div class="modal-content-group">
+            <div class="modal-content-group-success">
+                <p>Новый пароль отправлен на указанный E-mail</p>
+            </div>
+        </div>
+        <div class="modal-content-btn">
+            <button class="btn btn_blue">Выслать новый пароль</button>
+        </div>
+        <div class="modal-content-link icon">
+            <svg><use xlink:href="img/main.svg#icon-caret-down"></use></svg>
+            <strong data-changeModal="modal_auth">Вернуться на страницу авторизации</strong>
+        </div>
+    </div>
+</div>
+
+<div class="overlay overlay_modal" data-closeModal></div>

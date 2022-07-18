@@ -1,0 +1,35 @@
+// [[ Цвета, используемые в проекте. Должны начинаться с $color_ ]]
+
+$color_white: #fff;
+$color_body_bg: #EAF1FE;
+$color_gradient_main: linear-gradient(180deg, $color_white 0%, $color_body_bg 100%);
+$color_gradient_main_reverse: linear-gradient(359.42deg, $color_white 7.76%, $color_body_bg 97.64%);
+$color_bg_secondary: #FCFDFF;
+$color_border: #D3E3FF;
+$color_border_active: #9FC1FF;
+$color_gray: #929398;
+$color_border_secondary: #E6EEFF;
+$color_bg_card: #F2F7FE;
+
+$color_svg_eye: #8C9BEA;
+
+$color_black_darken: #141111;
+$color_black_title: #24252E;
+$color_black_main: #373943;
+$color_blue_hover: #1B2D9D;
+
+$color_input_disabled_bg: #F7FAFC;
+$color_input_disabled_border: #E3E8EE;
+
+$color_blue: #3E54D8;
+$color_green: #199F27;
+$color_yellow: #F3B63F;
+$color_red: #ED6373;
+
+$color_primary: tomato;
+
+$color_burger_show: #222222;
+$color_burger_close: #666666;
+
+$color_slider_dot: #ffa3a3;
+$color_slider_dot_active: #813b3b;
