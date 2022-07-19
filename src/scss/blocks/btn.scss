@@ -1,0 +1,17 @@
+.btn--light {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 600;
+  color: $color_blue;
+  border: 1px solid #d3e3ff;
+  padding: 1.5rem 3rem;
+  background-color: $color_white;
+  transition: .3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 21px 22px -13px rgb(62 84 216 / 51%);
+    background-color: $color_blue_hover;
+    color: $color_white;
+    border-color: $color_blue_hover;
+  }
+}
