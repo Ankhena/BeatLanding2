@@ -35,6 +35,10 @@ html, body {
     }
 }
 
+figure {
+    margin: 0;
+}
+
 .overlay {
     position: fixed;
     width: 100%;
@@ -427,7 +431,7 @@ span.mark {
     padding: 1.75rem;
     background: $color_white;
     border: 1px solid $color_border;
-    box-shadow: 0px 18px 16px -13px rgba(62, 84, 216, 0.1);
+    box-shadow: 0 18px 16px -13px rgba(62, 84, 216, 0.1);
     border-radius: 1rem;
 
     text-align: center;
@@ -437,11 +441,11 @@ span.mark {
             display: flex;
             flex-direction: column;
             align-items: center;
-    
+
             &__descr {
                 padding: 0;
             }
-    
+
             &__toggle {
                 margin: 0.8rem 0;
             }
@@ -450,3 +454,10 @@ span.mark {
 }
 
 // === / Mixins ===
+
+
+@function rem($size, $basicfz) {
+    //@return ($size/$layout-width*100)+vw;
+    //@return #{(math.div($size, $basicfz)*1)}rem;
+    @return #{(math.div($size, $basicfz)*1)}rem;
+}

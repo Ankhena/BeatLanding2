@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  @@include('_head.html', {
+  "title": "BeatLanding - Советник"
+  })
+
+</head>
+<body>
+
+@@include("_header.html", {
+"pageCounselor": "",
+"pagePortfolio": "",
+"pageCrypt": "",
+"pageTarrifs": "",
+"pageFaq": "",
+"pageAbout": "active"
+})
+
+<div class="section-outer section-main about">
+
+  <section class="section-inner about__intro">
+    <h1 class="page_header about__title beatmarket-title">Beat<span>Market</span></h1>
+    <p class="about__subtitle"><b>Бесплатная</b> платформа аналитики и контроля доходности инвестиций</p>
+    <a class="about__intro-link" href="">Подробнее</a>
+  </section>
+
+  <section class="section-inner about__bm-scoring">
+    <figure>
+      <img src="img/BMscoring.svg" alt="">
+    </figure>
+
+    <p><b>BeatMarket scoring</b> - запатентованная система оценки бизнеса публичных компаний</p>
+    <p class="about__bm-scoring-btn">По подписке</p>
+  </section>
+
+  <section class="why-try">
+    <div class="section-inner">
+      <h2 class="why-try__title">Почему стоит попробовать?</h2>
+      <ol class="why-try__list">
+        <li class="why-try__item why-try__item--1">
+          <p class="why-try__item-title">CEO платформы формирует свой портфель на основе BeatMarket scoring. Результаты
+            ниже</p>
+          <div class="why-try__graph-block">
+            <table>
+              <tr class="table__title-tr">
+                <th></th>
+                <th>Всё время</th>
+                <th>январь, 22</th>
+                <th>февраль, 22</th>
+                <th>март, 22</th>
+                <th>апрель, 22</th>
+                <th>май, 22</th>
+                <th>июнь, 22</th>
+              </tr>
+              <tr>
+                <th><b>Портфель СЕО</b></th>
+                <th class="table__td h-positive">+246.16 USD</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+              </tr>
+              <tr>
+                <th><b>S&P 500</b></th>
+                <th class="table__td h-positive">+246.16 USD</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+              </tr>
+              <tr>
+                <td colspan="8">
+                  <div id="try-why-graph-1" class="why-try__graph"></div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <p class="why-try__comment">* Указана абсолютная доходность в долларах США с учетом реинвестирования
+            дивидендов</p>
+        </li>
+
+        <li class="why-try__item why-try__item--2">
+          <p class="why-try__item-title">Пользователи с подпиской обычно зарабатывают больше, чем пользователи без
+            подписки*</p>
+
+          <div class="why-try__graph-block">
+            <table>
+              <tr class="table__title-tr">
+                <th></th>
+                <th>Всё время</th>
+                <th>январь, 22</th>
+                <th>февраль, 22</th>
+                <th>март, 22</th>
+                <th>апрель, 22</th>
+                <th>май, 22</th>
+                <th>июнь, 22</th>
+              </tr>
+              <tr>
+                <th><b>Портфель СЕО</b></th>
+                <th class="table__td h-positive">+246.16 USD</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+              </tr>
+              <tr>
+                <th><b>S&P 500</b></th>
+                <th class="table__td h-positive">+246.16 USD</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+              </tr>
+              <tr>
+                <td colspan="8">
+                  <div id="try-why-graph-2" class="why-try__graph"></div>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <p class="why-try__comment">* Статистика обновляется раз в сутки, данные внутренней статистики платформы.
+            Указан накопительная
+            доходность в % за весь период с начала отслеживания</p>
+          <ul class="why-try__profitability-block">
+            <li class="why-try__profitability why-try__profitability--dividents">
+              <p class="why-try__profitability-title">Дивидендная доходность</p>
+              <dl class="why-try__profitability-total">
+                <dt><span class="why-try__scoring">С подпиской</span></dt>
+                <dd>15.2%</dd>
+                <dt>Без подписки</dt>
+                <dd>12.4%</dd>
+              </dl>
+            </li>
+            <li class="why-try__profitability why-try__profitability--year">
+              <p class="why-try__profitability-title">Среднегодовая доходность</p>
+              <dl class="why-try__profitability-total">
+                <dt><span class="why-try__scoring">С подпиской</span></dt>
+                <dd>15.2%</dd>
+                <dt>Без подписки</dt>
+                <dd>12.4%</dd>
+              </dl>
+            </li>
+          </ul>
+
+        </li>
+
+        <li class="why-try__item why-try__item--3">
+          <p class="why-try__item-title"><strong>BeatMarket scoring</strong> - это система оценки бизнеса. 99 наивысший
+            балл. Компании с рейтингом
+            90 и выше
+            существенно опережают по доходности компании с низким рейтингом</p>
+
+          <div class="why-try__graph-block">
+            <table>
+              <tr class="table__title-tr">
+                <th></th>
+                <th>Всё время</th>
+                <th>январь, 22</th>
+                <th>февраль, 22</th>
+                <th>март, 22</th>
+                <th>апрель, 22</th>
+                <th>май, 22</th>
+                <th>июнь, 22</th>
+              </tr>
+              <tr>
+                <th><b>Портфель СЕО</b></th>
+                <th class="table__td h-positive">+246.16 USD</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+              </tr>
+              <tr>
+                <th><b>S&P 500</b></th>
+                <th class="table__td h-positive">+246.16 USD</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+              </tr>
+              <tr>
+                <td colspan="8">
+                  <div id="try-why-graph-3" class="why-try__graph"></div>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+        </li>
+
+        <li class="why-try__item why-try__item--4">
+          <p class="why-try__item-title"><strong>BM Advisor</strong> - это встроенная система-помощник генерации
+            портфеля на основе BM scoring.
+            Помогает формировать сбалансированный портфель. Идеально подходит для долгосрочных инвестиций.</p>
+
+          <div class="why-try__graph-block">
+            <table>
+              <tr class="table__title-tr">
+                <th></th>
+                <th>Всё время</th>
+                <th>январь, 22</th>
+                <th>февраль, 22</th>
+                <th>март, 22</th>
+                <th>апрель, 22</th>
+                <th>май, 22</th>
+                <th>июнь, 22</th>
+              </tr>
+              <tr>
+                <th><b>Портфель СЕО</b></th>
+                <th class="table__td h-positive">+246.16 USD</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+              </tr>
+              <tr>
+                <th><b>S&P 500</b></th>
+                <th class="table__td h-positive">+246.16 USD</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+                <th class="table__td h-negative">-1.11%</th>
+              </tr>
+              <tr>
+                <td colspan="8">
+                  <div id="try-why-graph-4" class="why-try__graph"></div>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+
+</div>
+
+
+@@include("_footer.html")
+
+</body>
+</html>
