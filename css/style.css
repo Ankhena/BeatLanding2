@@ -1347,7 +1347,7 @@ span.mark::before {
   font-weight: 600;
   color: #3E54D8;
   border: 1px solid #d3e3ff;
-  padding: 1.5rem 3rem;
+  padding: 0.8rem 3rem;
   background-color: #fff;
   transition: 0.3s ease-in-out;
 }
@@ -1446,6 +1446,8 @@ span.mark::before {
 }
 
 .why-try__list {
+  position: relative;
+  z-index: 0;
   padding-left: 0;
   margin-top: 80px;
   counter-reset: why-try-counter;
@@ -1492,6 +1494,7 @@ span.mark::before {
   width: 135px;
   height: 179px;
   background: url("data:image/svg+xml,%3Csvg width='135' height='179' viewBox='0 0 135 179' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M67.3103 -2.94223e-06C104.485 -1.31728e-06 134.621 30.1358 134.621 67.3103L134.621 134.621L-5.16608e-05 134.621L-4.87186e-05 67.3103C-4.70936e-05 30.1359 30.1358 -4.56717e-06 67.3103 -2.94223e-06Z' fill='%23F3B63F'/%3E%3Ccircle cx='120.945' cy='164.748' r='13.842' fill='%23ED6373'/%3E%3C/svg%3E%0A") no-repeat right top;
+  z-index: -1;
 }
 
 .why-try__item--2 .why-try__graph-block {
@@ -1507,6 +1510,7 @@ span.mark::before {
   width: 162px;
   height: 221px;
   background: url("data:image/svg+xml,%3Csvg width='162' height='221' viewBox='0 0 162 221' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='81' cy='140' r='81' fill='%233E54D8'/%3E%3Cpath d='M27 37C27 16.5655 43.5655 0 64 0V37H27Z' fill='%23ED6373'/%3E%3C/svg%3E%0A") no-repeat right top;
+  z-index: -1;
 }
 
 .why-try__item--3 .why-try__graph-block {
@@ -1522,6 +1526,7 @@ span.mark::before {
   width: 121px;
   height: 189px;
   background: url("data:image/svg+xml,%3Csvg width='121' height='189' viewBox='0 0 121 189' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M121 60.5096C121 93.7409 94.0602 120.68 60.8289 120.68L0.658272 120.68L0.658282 0.338941L60.8289 0.338946C94.0602 0.338949 121 27.2782 121 60.5096Z' fill='%23199F27'/%3E%3Ccircle cx='77.1238' cy='172.076' r='16.2962' fill='%233E54D8'/%3E%3C/svg%3E%0A") no-repeat right top;
+  z-index: -1;
 }
 
 .why-try__item--4 .why-try__graph-block {
@@ -1538,6 +1543,7 @@ span.mark::before {
   width: 1296px;
   height: 470px;
   background: url("data:image/svg+xml,%3Csvg width='1296' height='470' viewBox='0 0 1296 470' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M53.2459 363.634C82.3809 363.634 106 387.252 106 416.387C106 445.522 82.3809 469.141 53.2459 469.141C24.1109 469.141 0.49226 445.522 0.492261 416.387L0.492264 363.634L53.2459 363.634Z' fill='%23ED6373'/%3E%3Ccircle cx='1282.43' cy='13.4282' r='13.4282' fill='%23F3B63F'/%3E%3C/svg%3E%0A") no-repeat right top;
+  z-index: -1;
 }
 
 .why-try__item-title {
@@ -1560,11 +1566,15 @@ span.mark::before {
 
 .why-try__graph-block {
   --radius: 28px;
+  display: grid;
   grid-column: 1/-1;
+  width: 99%;
   margin-bottom: 32px;
   border-radius: var(--radius);
   background: #fff;
-  box-shadow: 0 34px 70px -13px rgba(62, 84, 216, 0.06);
+  box-shadow: 0 34px 70px 13px rgba(62, 84, 216, 0.06);
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .why-try__graph-block::before {
@@ -1580,19 +1590,20 @@ span.mark::before {
 .why-try__graph-block table {
   position: relative;
   z-index: 2;
-  width: calc(100% - 108px);
   padding-top: 30px;
   padding-left: 54px;
   padding-right: 54px;
   padding-bottom: 30px;
   font-size: 13px;
-  background: #fff;
 }
 
 .why-try__graph-block th {
   padding-top: 5px;
   padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .why-try__graph-block th b {
@@ -1690,7 +1701,7 @@ span.mark::before {
 .should-try__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  gap: 44px;
   margin-top: 70px;
   margin-bottom: 120px;
 }
@@ -3282,6 +3293,56 @@ span.mark::before {
 
   .section-footer .footer-link:last-child {
     margin-top: -1.8rem;
+  }
+
+  .why-try__item {
+    grid-template-columns: 1fr;
+  }
+
+  .why-try__item::before {
+    justify-self: center;
+  }
+
+  .why-try__item--1 .why-try__graph-block::after {
+    top: -20px;
+    right: -18px;
+    width: 80px;
+    height: 0;
+    padding-top: 132%;
+    background-size: contain;
+  }
+
+  .why-try__item--2 .why-try__graph-block::after {
+    left: -30px;
+    bottom: -40px;
+    width: 52px;
+    height: 99px;
+    background-size: contain;
+  }
+
+  .why-try__item--3 .why-try__graph-block::after {
+    right: -20px;
+    width: 80px;
+    height: 0;
+    padding-top: 156%;
+  }
+
+  .why-try__item--4 .why-try__graph-block::after {
+    width: calc(100% + 30px);
+    height: 0;
+    padding-top: 36%;
+  }
+
+  .why-try__profitability-block {
+    grid-template-columns: 1fr;
+  }
+
+  .should-try__list {
+    grid-template-columns: 1fr;
+  }
+
+  .press__list {
+    grid-template-columns: 1fr;
   }
 
   .section-main {

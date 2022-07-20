@@ -790,7 +790,7 @@ if (document.querySelector('#try-why-graph-2')) {
     series: [
 
       {
-        name: 'Портфель СЕО',
+        name: 'С подпиской',
         marker: {
           symbol: 'circle'
         },
@@ -798,7 +798,7 @@ if (document.querySelector('#try-why-graph-2')) {
         color: "#3E54D8"
       },
       {
-        name: 'S&P 500',
+        name: 'Без подписки',
         marker: {
           symbol: 'circle'
         },
@@ -862,7 +862,7 @@ if (document.querySelector('#try-why-graph-3')) {
     series: [
 
       {
-        name: 'Портфель СЕО',
+        name: 'BM scoring 90+',
         marker: {
           symbol: 'circle'
         },
@@ -870,7 +870,7 @@ if (document.querySelector('#try-why-graph-3')) {
         color: "#3E54D8"
       },
       {
-        name: 'S&P 500',
+        name: 'BM scoring 30-',
         marker: {
           symbol: 'circle'
         },
@@ -934,7 +934,7 @@ if (document.querySelector('#try-why-graph-4')) {
     series: [
 
       {
-        name: 'Портфель СЕО',
+        name: 'BM Advisor ',
         marker: {
           symbol: 'circle'
         },
@@ -942,7 +942,7 @@ if (document.querySelector('#try-why-graph-4')) {
         color: "#3E54D8"
       },
       {
-        name: 'S&P 500',
+        name: 'Пользователь без подписки',
         marker: {
           symbol: 'circle'
         },
