@@ -12,6 +12,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 81px 24px;
+
+  @media ($media_sm) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .press__item {

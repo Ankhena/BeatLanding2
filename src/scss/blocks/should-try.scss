@@ -10,9 +10,13 @@
 .should-try__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  gap: 44px;
   margin-top: 70px;
   margin-bottom: 120px;
+
+  @media ($media_sm) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .should-try__item {
