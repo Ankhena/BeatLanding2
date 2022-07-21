@@ -2395,12 +2395,14 @@ span.mark::before {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .section-tarrifs .tarrifs-cards-card {
   position: relative;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #FAFCFF;
   border: 1px solid #D3E3FF;
   border-radius: 0.9rem;
   padding: 1.8rem 1.5rem;
@@ -2498,7 +2500,7 @@ span.mark::before {
 }
 
 .section-tarrifs .tarrifs-cards-card-btn {
-  margin-top: auto;
+  margin-top: 1.5rem;
 }
 
 .section-tarrifs .tarrifs-cards-card-btn .btn_tarrifs {
@@ -2515,6 +2517,55 @@ span.mark::before {
   background-color: #1B2D9D;
   color: #fff;
   border-color: #1B2D9D;
+}
+
+.tariffs__title {
+  margin-bottom: 2.2222222222rem;
+}
+
+.tariffs-block {
+  margin-top: 2.75rem;
+  margin-bottom: 2.75rem;
+  padding: 1.75rem;
+  background: #fff;
+  border: 1px solid #D3E3FF;
+  box-shadow: 0 18px 16px -13px rgba(62, 84, 216, 0.1);
+  border-radius: 1rem;
+}
+
+.tariffs-free ul {
+  padding-left: 20px;
+  margin-bottom: 1.2rem;
+  list-style-type: disc;
+}
+
+.tariffs-free ul li::marker {
+  color: #3E54D8;
+}
+
+.tariffs-free__title {
+  margin-bottom: 1.2rem;
+  font-size: 1.7777777778rem;
+  font-weight: 700;
+  color: #3E54D8;
+}
+
+.tariffs-free__text {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.tariffs__benefits-list {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.tariffs__benefits-list li::marker {
+  color: #3E54D8;
+}
+
+.tariffs-subtitle {
+  margin-bottom: 1.2rem;
 }
 
 .section-faq {
