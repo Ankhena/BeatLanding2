@@ -1054,6 +1054,8 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-gap: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
 
             @media ($media_sm) {
                 grid-template-columns: 1fr;
@@ -1062,7 +1064,7 @@
             &-card {
                 position: relative;
                 overflow: hidden;
-                background-color: $color_white;
+                background-color: #FAFCFF;
                 border: 1px solid $color_border;
                 border-radius: 0.9rem;
                 padding: 1.8rem 1.5rem;
@@ -1195,7 +1197,8 @@
                 }
 
                 &-btn {
-                    margin-top: auto;
+                    //margin-top: auto;
+                    margin-top: 1.5rem;
 
                     .btn_tarrifs {
                         font-weight: 600;
@@ -1224,7 +1227,61 @@
     }
 
 }
+.tariffs__title {
+    margin-bottom: rem(40,18);
+}
+.tariffs-block {
+    margin-top: 2.75rem;
+    margin-bottom: 2.75rem;
 
+    padding: 1.75rem;
+    background: $color_white;
+    border: 1px solid $color_border;
+    box-shadow: 0 18px 16px -13px rgba(62, 84, 216, 0.1);
+    border-radius: 1rem;
+}
+
+.tariffs-free {
+
+
+    ul {
+        padding-left: 20px;
+        margin-bottom: 1.2rem;
+        list-style-type: disc;
+        li {
+            &::marker {
+                color: $color_blue;
+            }
+        }
+
+    }
+}
+
+.tariffs-free__title {
+    margin-bottom: 1.2rem;
+    font-size: rem(32,18);
+    font-weight: 700;
+    color: $color_blue;
+}
+
+.tariffs-free__text {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.tariffs__benefits-list {
+    padding-left: 20px;
+    list-style-type: disc;
+    li {
+        &::marker {
+            color: $color_blue;
+        }
+    }
+}
+
+.tariffs-subtitle {
+    margin-bottom: 1.2rem;
+}
 // === / tarrifs ===
 
 // === faq ===
