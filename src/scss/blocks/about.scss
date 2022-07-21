@@ -2,6 +2,10 @@
   padding-bottom: rem(200,18);
   background: url("../img/about-intro-bg.svg") no-repeat top center / contain;
   text-align: center;
+
+  @media ($media_sm) {
+    padding-bottom: rem(80,14);
+  }
 }
 
 .about__title {

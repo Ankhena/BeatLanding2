@@ -26,6 +26,8 @@
 
   @media ($media_sm) {
     grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 60px;
   }
 
   &::before {
@@ -45,6 +47,10 @@
 
     @media ($media_sm) {
       justify-self: center;
+      min-width: 46px;
+      min-height: 46px;
+      border-radius: 8px;
+      font-size: rem(21,14);
     }
   }
 }
@@ -171,6 +177,11 @@
   max-width: 60%;
   margin-left: auto;
   font-size: rem(14, 18);
+
+  @media ($media_sm) {
+    max-width: unset;
+    font-size: 1rem;
+  }
 }
 
 .why-try__graph-block {
@@ -184,6 +195,11 @@
   box-shadow: 0 34px 70px 13px rgba(62, 84, 216, 0.06);
   overflow-x: auto;
   overflow-y: hidden;
+
+  @media ($media_sm) {
+
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
 
   &::before {
     content: "";
@@ -205,6 +221,10 @@
     padding-bottom: 30px;
     font-size: 13px;
     //background: $color_white;
+    @media ($media_sm) {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
   }
 
   th {
@@ -285,7 +305,12 @@
   gap: 20px 90px;
   margin: 0;
 
+  @media ($media_sm) {
+    column-gap: 50px;
+  }
+
   dt {
+    align-self: center;
     white-space: nowrap;
   }
 
