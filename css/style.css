@@ -1670,6 +1670,7 @@ span.mark::before {
 }
 
 .why-try__profitability-total dt {
+  align-self: center;
   white-space: nowrap;
 }
 
@@ -1763,6 +1764,7 @@ span.mark::before {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .press {
@@ -3346,12 +3348,22 @@ span.mark::before {
     margin-top: -1.8rem;
   }
 
+  .about__intro {
+    padding-bottom: 5.7142857143rem;
+  }
+
   .why-try__item {
     grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 60px;
   }
 
   .why-try__item::before {
     justify-self: center;
+    min-width: 46px;
+    min-height: 46px;
+    border-radius: 8px;
+    font-size: 1.5rem;
   }
 
   .why-try__item--1 .why-try__graph-block::after {
@@ -3384,8 +3396,27 @@ span.mark::before {
     padding-top: 36%;
   }
 
+  .why-try__comment {
+    max-width: unset;
+    font-size: 1rem;
+  }
+
+  .why-try__graph-block {
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
+
+  .why-try__graph-block table {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
   .why-try__profitability-block {
     grid-template-columns: 1fr;
+  }
+
+  .why-try__profitability-total {
+    -moz-column-gap: 50px;
+         column-gap: 50px;
   }
 
   .should-try__list {
