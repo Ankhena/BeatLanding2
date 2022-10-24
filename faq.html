@@ -271,151 +271,272 @@
 </footer>
 
 <div class="modal" id="modal_auth">
-    <div class="modal-header">
-        <h2>Вход</h2>
-    </div>
-    <div class="modal-content error">
-        <div class="modal-content-group error">
-            <div class="modal-content-group-label">
-                <h4>E-mail</h4>
-                <span>На этот адрес мы отправим письмо с подтверждением</span>
-            </div>
-            <div class="modal-content-group-input">
-                <input type="email" placeholder="Beat@gmail.com" class="input_text">
-            </div>
-            <div class="modal-content-group-message">
-                <span>Введите корректный E-mail</span>
-            </div>
-        </div>
-        <div class="modal-content-group error">
-            <div class="modal-content-group-label">
-                <h4>Пароль</h4>
-                <strong data-changeModal="modal_pass">Забыли пароль?</strong>
-            </div>
-            <div class="modal-content-group-input icon">
-                <input type="password" class="input_text">
-                <svg class="eye eye_open"><use xlink:href="img/main.svg#eye"></use></svg>
-                <svg class="eye eye_close"><use xlink:href="img/main.svg#eye_slash"></use></svg>
-            </div>
-            <div class="modal-content-group-message">
-                <span>Это поле обязательно для заполнения</span>
-            </div>
-        </div>
-        <div class="modal-content-group">
-            <label class="modal-content-group-checkbox">
-                <input type="checkbox" class="checkbox_custom visually_hidden">
-                <strong>Запомнить меня</strong>
-            </label>
-        </div>
-        <div class="modal-content-group">
-            <div class="modal-content-group-error">
-                <p>Не все обязательные поля заполнены</p>
-            </div>
-        </div>
-        <div class="modal-content-btn half">
-            <button class="btn btn_blue">Войти</button>
-            <button class="btn btn_reverse" data-changeModal="modal_reg">У меня нет аккаунта</button>
-        </div>
-        <div class="modal-content-divider">
-            <span>Или</span>
-        </div>
-        <div class="modal-content-telegram">
-            <a href="#" class="btn btn_bordered">
-                <svg class=""><use xlink:href="img/main.svg#icon-telegram-fill"></use></svg>
-                <span>Авторизироваться через Telegram</span>
-            </a>
-        </div>
-    </div>
+	<div class="modal-header">
+		<h2>Вход</h2>
+	</div>
+	<div class="modal-content error">
+		<div class="modal-content-group error">
+			<div class="modal-content-group-label">
+				<h4>E-mail</h4>
+				<span>На этот адрес мы отправим письмо с подтверждением</span>
+			</div>
+			<div class="modal-content-group-input">
+				<input type="email" placeholder="Beat@gmail.com" class="input_text">
+			</div>
+			<div class="modal-content-group-message">
+				<span>Введите корректный E-mail</span>
+			</div>
+		</div>
+		<div class="modal-content-group error">
+			<div class="modal-content-group-label">
+				<h4>Пароль</h4>
+				<strong data-changeModal="modal_pass">Забыли пароль?</strong>
+			</div>
+			<div class="modal-content-group-input icon">
+				<input type="password" class="input_text">
+				<svg class="eye eye_open">
+					<use xlink:href="img/main.svg#eye"></use>
+				</svg>
+				<svg class="eye eye_close">
+					<use xlink:href="img/main.svg#eye_slash"></use>
+				</svg>
+			</div>
+			<div class="modal-content-group-message">
+				<span>Это поле обязательно для заполнения</span>
+			</div>
+		</div>
+		<div class="modal-content-group">
+			<label class="modal-content-group-checkbox">
+				<input type="checkbox" class="checkbox_custom visually_hidden">
+				<strong>Запомнить меня</strong>
+			</label>
+		</div>
+		<div class="modal-content-group">
+			<div class="modal-content-group-error">
+				<p>Не все обязательные поля заполнены</p>
+			</div>
+		</div>
+		<div class="modal-content-btn half">
+			<button class="btn btn_blue">Войти</button>
+			<button class="btn btn_reverse" data-changeModal="modal_reg">У меня нет аккаунта</button>
+		</div>
+		<div class="modal-content-divider">
+			<span>Или войдите с помощью</span>
+		</div>
+		<div class="modal-content-socials">
+			<a href="#" class="btn btn_bordered">
+				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g clip-path="url(#clip0_7665_11285)">
+						<path
+							d="M31.2525 16.2989C31.2525 14.9879 31.1462 14.0312 30.9159 13.0391H15.9453V18.9564H24.7327C24.5556 20.4269 23.5989 22.6415 21.4729 24.1296L21.4431 24.3277L26.1765 27.9947L26.5045 28.0274C29.5162 25.2458 31.2525 21.1533 31.2525 16.2989"
+							fill="#4285F4" />
+						<path
+							d="M15.945 31.8898C20.2501 31.8898 23.8642 30.4724 26.5041 28.0276L21.4725 24.1298C20.1261 25.0688 18.3189 25.7243 15.945 25.7243C11.7284 25.7243 8.14966 22.9429 6.87393 19.0984L6.68694 19.1143L1.76505 22.9234L1.70068 23.1023C4.32273 28.311 9.70862 31.8898 15.945 31.8898Z"
+							fill="#34A853" />
+						<path
+							d="M6.87401 19.0965C6.5374 18.1044 6.34259 17.0413 6.34259 15.9429C6.34259 14.8444 6.5374 13.7815 6.8563 12.7894L6.84739 12.5781L1.86382 8.70776L1.70076 8.78532C0.620092 10.9468 0 13.374 0 15.9429C0 18.5119 0.620092 20.939 1.70076 23.1004L6.87401 19.0965"
+							fill="#FBBC05" />
+						<path
+							d="M15.945 6.16537C18.939 6.16537 20.9587 7.45869 22.1103 8.53948L26.6104 4.14571C23.8466 1.57679 20.2501 0 15.945 0C9.70862 0 4.32273 3.57875 1.70068 8.78742L6.85623 12.7915C8.14966 8.94693 11.7284 6.16537 15.945 6.16537"
+							fill="#EB4335" />
+					</g>
+					<defs>
+						<clipPath id="clip0_7665_11285">
+							<rect width="32" height="32" fill="white" />
+						</clipPath>
+					</defs>
+				</svg>
+
+			</a>
+			<a href="#" class="btn btn_bordered">
+				<svg class="">
+					<use xlink:href="img/main.svg#icon-telegram-fill"></use>
+				</svg>
+			</a>
+			<a href="#" class="btn btn_bordered">
+				<svg width="27" height="32" viewBox="0 0 27 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M25.4117 10.9464C25.2265 11.0901 21.9572 12.9323 21.9572 17.0285C21.9572 21.7665 26.1172 23.4426 26.2418 23.4841C26.2226 23.5863 25.5809 25.7797 24.0484 28.0146C22.6819 29.9813 21.2548 31.9448 19.0837 31.9448C16.9127 31.9448 16.354 30.6837 13.8477 30.6837C11.4053 30.6837 10.5369 31.9863 8.55102 31.9863C6.56516 31.9863 5.17953 30.1665 3.58637 27.9316C1.74099 25.3072 0.25 21.2301 0.25 17.3605C0.25 11.1539 4.28557 7.86227 8.25729 7.86227C10.3677 7.86227 12.1268 9.2479 13.4518 9.2479C14.7129 9.2479 16.6796 7.77926 19.0805 7.77926C19.9905 7.77926 23.2598 7.86227 25.4117 10.9464ZM17.9407 5.15166C18.9337 3.97356 19.6361 2.3389 19.6361 0.704233C19.6361 0.477551 19.6169 0.247677 19.5754 0.0625C17.9599 0.123161 16.0379 1.13844 14.8789 2.48257C13.969 3.517 13.1198 5.15166 13.1198 6.80868C13.1198 7.05771 13.1613 7.30674 13.1804 7.38655C13.2826 7.40571 13.4486 7.42806 13.6146 7.42806C15.0641 7.42806 16.8872 6.45748 17.9407 5.15166Z"
+						fill="black" />
+				</svg>
+			</a>
+			<a href="#" class="btn btn_bordered">
+				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g clip-path="url(#clip0_7665_11295)">
+						<path
+							d="M32 16C32 7.1635 24.8365 0 16 0C7.1635 0 0 7.16337 0 16C0 23.986 5.851 30.6054 13.5 31.8056V20.625H9.4375V16H13.5V12.475C13.5 8.465 15.8888 6.25 19.5434 6.25C21.294 6.25 23.125 6.5625 23.125 6.5625V10.5H21.1075C19.1198 10.5 18.5 11.7334 18.5 12.9987V16H22.9375L22.2281 20.625H18.5V31.8056C26.149 30.6054 32 23.9861 32 16Z"
+							fill="#1877F2" />
+						<path
+							d="M22.2281 20.625L22.9375 16H18.5V12.9987C18.5 11.7332 19.1199 10.5 21.1075 10.5H23.125V6.5625C23.125 6.5625 21.294 6.25 19.5434 6.25C15.8888 6.25 13.5 8.465 13.5 12.475V16H9.4375V20.625H13.5V31.8056C14.327 31.9352 15.1629 32.0002 16 32C16.8371 32.0002 17.673 31.9353 18.5 31.8056V20.625H22.2281Z"
+							fill="white" />
+					</g>
+					<defs>
+						<clipPath id="clip0_7665_11295">
+							<rect width="32" height="32" fill="white" />
+						</clipPath>
+					</defs>
+				</svg>
+			</a>
+		</div>
+	</div>
 </div>
 
 <div class="modal" id="modal_reg">
-    <div class="modal-header">
-        <h2>Регистрация</h2>
-    </div>
-    <div class="modal-content">
-        <div class="modal-content-group">
-            <div class="modal-content-group-label">
-                <h4>E-mail</h4>
-                <span>На этот адрес мы отправим письмо с подтверждением</span>
-            </div>
-            <div class="modal-content-group-input">
-                <input type="email" placeholder="Beat@gmail.com" class="input_text">
-            </div>
-            <div class="modal-content-group-message">
-                <span>Введите корректный E-mail</span>
-            </div>
-        </div>
-        <div class="modal-content-group">
-            <div class="modal-content-group-label">
-                <h4>Пароль</h4>
-                <span>Минимум 6 символов</span>
-            </div>
-            <div class="modal-content-group-input icon">
-                <input type="password" class="input_text">
-                <svg class="eye eye_open"><use xlink:href="img/main.svg#eye"></use></svg>
-                <svg class="eye eye_close"><use xlink:href="img/main.svg#eye_slash"></use></svg>
-            </div>
-            <div class="modal-content-group-message">
-                <span>Это поле обязательно для заполнения</span>
-            </div>
-        </div>
-        <div class="modal-content-group">
-            <div class="modal-content-group-label">
-                <h4>Повторите пароль</h4>
-            </div>
-            <div class="modal-content-group-input icon">
-                <input type="password" class="input_text">
-                <svg class="eye eye_open"><use xlink:href="img/main.svg#eye"></use></svg>
-                <svg class="eye eye_close"><use xlink:href="img/main.svg#eye_slash"></use></svg>
-            </div>
-            <div class="modal-content-group-message">
-                <span>Это поле обязательно для заполнения</span>
-            </div>
-        </div>
-        <div class="modal-content-btn">
-            <button class="btn btn_blue">Зарегистрироваться</button>
-        </div>
-        <div class="modal-content-link">
-            <span>Уже есть аккаунт? <strong data-changeModal="modal_auth">Авторизироваться</strong></span>
-        </div>
-    </div>
+	<div class="modal-header">
+		<h2>Регистрация</h2>
+	</div>
+	<div class="modal-content">
+		<div class="modal-content-group">
+			<div class="modal-content-group-label">
+				<h4>E-mail</h4>
+				<span>На этот адрес мы отправим письмо с подтверждением</span>
+			</div>
+			<div class="modal-content-group-input">
+				<input type="email" placeholder="Beat@gmail.com" class="input_text">
+			</div>
+			<div class="modal-content-group-message">
+				<span>Введите корректный E-mail</span>
+			</div>
+		</div>
+		<div class="modal-content-group">
+			<div class="modal-content-group-label">
+				<h4>Пароль</h4>
+				<span>Минимум 6 символов</span>
+			</div>
+			<div class="modal-content-group-input icon">
+				<input type="password" class="input_text">
+				<svg class="eye eye_open">
+					<use xlink:href="img/main.svg#eye"></use>
+				</svg>
+				<svg class="eye eye_close">
+					<use xlink:href="img/main.svg#eye_slash"></use>
+				</svg>
+			</div>
+			<div class="modal-content-group-message">
+				<span>Это поле обязательно для заполнения</span>
+			</div>
+		</div>
+		<div class="modal-content-group">
+			<div class="modal-content-group-label">
+				<h4>Повторите пароль</h4>
+			</div>
+			<div class="modal-content-group-input icon">
+				<input type="password" class="input_text">
+				<svg class="eye eye_open">
+					<use xlink:href="img/main.svg#eye"></use>
+				</svg>
+				<svg class="eye eye_close">
+					<use xlink:href="img/main.svg#eye_slash"></use>
+				</svg>
+			</div>
+			<div class="modal-content-group-message">
+				<span>Это поле обязательно для заполнения</span>
+			</div>
+		</div>
+		<div class="modal-content-btn">
+			<button class="btn btn_blue">Зарегистрироваться</button>
+		</div>
+		<div class="modal-content-link">
+			<span>Уже есть аккаунт? <strong data-changeModal="modal_auth">Авторизироваться</strong></span>
+		</div>
+		<div class="modal-content-divider">
+			<span>Или войдите с помощью</span>
+		</div>
+		<div class="modal-content-socials">
+			<a href="#" class="btn btn_bordered">
+				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g clip-path="url(#clip0_7665_11285)">
+						<path
+							d="M31.2525 16.2989C31.2525 14.9879 31.1462 14.0312 30.9159 13.0391H15.9453V18.9564H24.7327C24.5556 20.4269 23.5989 22.6415 21.4729 24.1296L21.4431 24.3277L26.1765 27.9947L26.5045 28.0274C29.5162 25.2458 31.2525 21.1533 31.2525 16.2989"
+							fill="#4285F4"></path>
+						<path
+							d="M15.945 31.8898C20.2501 31.8898 23.8642 30.4724 26.5041 28.0276L21.4725 24.1298C20.1261 25.0688 18.3189 25.7243 15.945 25.7243C11.7284 25.7243 8.14966 22.9429 6.87393 19.0984L6.68694 19.1143L1.76505 22.9234L1.70068 23.1023C4.32273 28.311 9.70862 31.8898 15.945 31.8898Z"
+							fill="#34A853"></path>
+						<path
+							d="M6.87401 19.0965C6.5374 18.1044 6.34259 17.0413 6.34259 15.9429C6.34259 14.8444 6.5374 13.7815 6.8563 12.7894L6.84739 12.5781L1.86382 8.70776L1.70076 8.78532C0.620092 10.9468 0 13.374 0 15.9429C0 18.5119 0.620092 20.939 1.70076 23.1004L6.87401 19.0965"
+							fill="#FBBC05"></path>
+						<path
+							d="M15.945 6.16537C18.939 6.16537 20.9587 7.45869 22.1103 8.53948L26.6104 4.14571C23.8466 1.57679 20.2501 0 15.945 0C9.70862 0 4.32273 3.57875 1.70068 8.78742L6.85623 12.7915C8.14966 8.94693 11.7284 6.16537 15.945 6.16537"
+							fill="#EB4335"></path>
+					</g>
+					<defs>
+						<clipPath id="clip0_7665_11285">
+							<rect width="32" height="32" fill="white"></rect>
+						</clipPath>
+					</defs>
+				</svg>
+
+			</a>
+			<a href="#" class="btn btn_bordered">
+				<svg class="">
+					<use xlink:href="img/main.svg#icon-telegram-fill"></use>
+				</svg>
+			</a>
+			<a href="#" class="btn btn_bordered">
+				<svg width="27" height="32" viewBox="0 0 27 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M25.4117 10.9464C25.2265 11.0901 21.9572 12.9323 21.9572 17.0285C21.9572 21.7665 26.1172 23.4426 26.2418 23.4841C26.2226 23.5863 25.5809 25.7797 24.0484 28.0146C22.6819 29.9813 21.2548 31.9448 19.0837 31.9448C16.9127 31.9448 16.354 30.6837 13.8477 30.6837C11.4053 30.6837 10.5369 31.9863 8.55102 31.9863C6.56516 31.9863 5.17953 30.1665 3.58637 27.9316C1.74099 25.3072 0.25 21.2301 0.25 17.3605C0.25 11.1539 4.28557 7.86227 8.25729 7.86227C10.3677 7.86227 12.1268 9.2479 13.4518 9.2479C14.7129 9.2479 16.6796 7.77926 19.0805 7.77926C19.9905 7.77926 23.2598 7.86227 25.4117 10.9464ZM17.9407 5.15166C18.9337 3.97356 19.6361 2.3389 19.6361 0.704233C19.6361 0.477551 19.6169 0.247677 19.5754 0.0625C17.9599 0.123161 16.0379 1.13844 14.8789 2.48257C13.969 3.517 13.1198 5.15166 13.1198 6.80868C13.1198 7.05771 13.1613 7.30674 13.1804 7.38655C13.2826 7.40571 13.4486 7.42806 13.6146 7.42806C15.0641 7.42806 16.8872 6.45748 17.9407 5.15166Z"
+						fill="black"></path>
+				</svg>
+			</a>
+			<a href="#" class="btn btn_bordered">
+				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g clip-path="url(#clip0_7665_11295)">
+						<path
+							d="M32 16C32 7.1635 24.8365 0 16 0C7.1635 0 0 7.16337 0 16C0 23.986 5.851 30.6054 13.5 31.8056V20.625H9.4375V16H13.5V12.475C13.5 8.465 15.8888 6.25 19.5434 6.25C21.294 6.25 23.125 6.5625 23.125 6.5625V10.5H21.1075C19.1198 10.5 18.5 11.7334 18.5 12.9987V16H22.9375L22.2281 20.625H18.5V31.8056C26.149 30.6054 32 23.9861 32 16Z"
+							fill="#1877F2"></path>
+						<path
+							d="M22.2281 20.625L22.9375 16H18.5V12.9987C18.5 11.7332 19.1199 10.5 21.1075 10.5H23.125V6.5625C23.125 6.5625 21.294 6.25 19.5434 6.25C15.8888 6.25 13.5 8.465 13.5 12.475V16H9.4375V20.625H13.5V31.8056C14.327 31.9352 15.1629 32.0002 16 32C16.8371 32.0002 17.673 31.9353 18.5 31.8056V20.625H22.2281Z"
+							fill="white"></path>
+					</g>
+					<defs>
+						<clipPath id="clip0_7665_11295">
+							<rect width="32" height="32" fill="white"></rect>
+						</clipPath>
+					</defs>
+				</svg>
+			</a>
+		</div>
+	</div>
 </div>
 
 <div class="modal" id="modal_pass">
-    <div class="modal-header">
-        <h2>Забыли пароль?</h2>
-    </div>
-    <div class="modal-content success">
-        <div class="modal-content-group">
-            <div class="modal-content-group-text">
-                <p>Введите свой адрес электронной почты, мы отправим новый пароль</p>
-            </div>
-        </div>
-        <div class="modal-content-group">
-            <div class="modal-content-group-label">
-                <h4>E-mail</h4>
-                <span>На этот адрес мы отправим письмо с подтверждением</span>
-            </div>
-            <div class="modal-content-group-input">
-                <input type="email" placeholder="Beat@gmail.com" class="input_text">
-            </div>
-            <div class="modal-content-group-message">
-                <span>Введите корректный E-mail</span>
-            </div>
-        </div>
-        <div class="modal-content-group">
-            <div class="modal-content-group-success">
-                <p>Новый пароль отправлен на указанный E-mail</p>
-            </div>
-        </div>
-        <div class="modal-content-btn">
-            <button class="btn btn_blue">Выслать новый пароль</button>
-        </div>
-        <div class="modal-content-link icon">
-            <svg><use xlink:href="img/main.svg#icon-caret-down"></use></svg>
-            <strong data-changeModal="modal_auth">Вернуться на страницу авторизации</strong>
-        </div>
-    </div>
+	<div class="modal-header">
+		<h2>Забыли пароль?</h2>
+	</div>
+	<div class="modal-content success">
+		<div class="modal-content-group">
+			<div class="modal-content-group-text">
+				<p>Введите свой адрес электронной почты, мы отправим новый пароль</p>
+			</div>
+		</div>
+		<div class="modal-content-group">
+			<div class="modal-content-group-label">
+				<h4>E-mail</h4>
+				<span>На этот адрес мы отправим письмо с подтверждением</span>
+			</div>
+			<div class="modal-content-group-input">
+				<input type="email" placeholder="Beat@gmail.com" class="input_text">
+			</div>
+			<div class="modal-content-group-message">
+				<span>Введите корректный E-mail</span>
+			</div>
+		</div>
+		<div class="modal-content-group">
+			<div class="modal-content-group-success">
+				<p>Новый пароль отправлен на указанный E-mail</p>
+			</div>
+		</div>
+		<div class="modal-content-btn">
+			<button class="btn btn_blue">Выслать новый пароль</button>
+		</div>
+		<div class="modal-content-link icon">
+			<svg>
+				<use xlink:href="img/main.svg#icon-caret-down"></use>
+			</svg>
+			<strong data-changeModal="modal_auth">Вернуться на страницу авторизации</strong>
+		</div>
+	</div>
 </div>
 
 <div class="overlay overlay_modal" data-closeModal></div>

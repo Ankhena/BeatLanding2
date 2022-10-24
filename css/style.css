@@ -505,7 +505,6 @@ figure {
 .btn_bordered svg {
   height: 2.6rem;
   width: 2.6rem;
-  margin-right: 0.9rem;
 }
 
 .btn_bordered span {
@@ -1024,8 +1023,22 @@ span.mark::before {
   position: relative;
 }
 
-.modal-content-telegram .btn_bordered {
+.modal-content-socials {
+  display: flex;
+  align-items: center;
+}
+
+.modal-content-socials .btn_bordered {
   width: 100%;
+}
+
+.modal-content-socials .btn_bordered + .btn_bordered {
+  margin-left: 8px;
+}
+
+.modal-content-socials svg {
+  width: 32px;
+  height: 32px;
 }
 
 .modal-content-link {
@@ -1385,11 +1398,18 @@ span.mark::before {
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 1.7222222222rem;
+  padding: 1.6111111111rem 8.6111111111rem;
   margin-left: auto;
   margin-right: auto;
   font-weight: 600;
-  color: #3E54D8;
+  color: #fff;
+  background-color: #3E54D8;
   text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.about__intro-link:hover {
+  background-color: #ED6373;
 }
 
 .about__bm-scoring {
@@ -1443,6 +1463,9 @@ span.mark::before {
 
 .why-try__title {
   text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  color: #24252E;
 }
 
 .why-try__list {
@@ -1697,6 +1720,9 @@ span.mark::before {
 
 .should-try__title {
   text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  color: #24252E;
 }
 
 .should-try__list {
@@ -1775,6 +1801,9 @@ span.mark::before {
 .press__title {
   margin-bottom: 120px;
   text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  color: #24252E;
 }
 
 .press__list {
@@ -1879,6 +1908,68 @@ span.mark::before {
   transform: translateY(-50%);
 }
 
+.section-main .main-content-wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+}
+
+.section-main .main-content-wrapper::before {
+  content: "";
+  width: 165px;
+  height: 165px;
+  background: #ED6373;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20%;
+  left: -67px;
+}
+
+.section-main .main-content-block {
+  background-color: #FFFFFF;
+  border-radius: 18px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  padding: 25px 64px 64px;
+}
+
+.section-main .main-content-block-decor {
+  background-color: #F3B63F;
+  border-radius: 50%;
+  width: 148px;
+  height: 148px;
+  position: absolute;
+  top: -86px;
+  right: -62px;
+  z-index: -1;
+}
+
+.section-main .main-content-block .section_header {
+  margin-bottom: 50px;
+}
+
+.section-main .main-content-block-text {
+  margin-bottom: 60px;
+}
+
+.section-main .main-content-block-list {
+  margin-bottom: 32px;
+  padding: 0;
+}
+
+.section-main .main-content-block-list li::before {
+  background-color: #3E54D8;
+}
+
+.section-main .main-content-block .btn {
+  max-width: 421px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
 .section-main .main-img {
   min-width: 25rem;
   max-width: 25rem;
@@ -1891,11 +1982,14 @@ span.mark::before {
 
 .section-excel {
   padding: var(--section_padding) 0;
+  background-image: url("../img/excel-bg.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 
 .section-excel .excel-text {
   width: 65%;
-  margin: 2.5rem auto;
+  margin: 2.5rem auto 129px;
   font-size: 1.1rem;
   line-height: 1.6;
   font-weight: 500;
@@ -2409,6 +2503,7 @@ span.mark::before {
   border-radius: 0.9rem;
   padding: 1.8rem 1.5rem;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   transition: 0.3s ease-in-out;
   cursor: pointer;
@@ -2519,6 +2614,47 @@ span.mark::before {
   background-color: #1B2D9D;
   color: #fff;
   border-color: #1B2D9D;
+}
+
+.tariffs__countries {
+  margin-top: 24px;
+}
+
+.tariffs__countries-info {
+  font-weight: 600;
+  font-size: 15px;
+  color: #24252E;
+  margin-bottom: 14px;
+}
+
+.tariffs__countries-row {
+  display: flex;
+}
+
+.tariffs__countries-item {
+  background: #FFFFFF;
+  border: 1px solid #8C9BEA;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 16px;
+  color: #3E54D8;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tariffs__countries-item:hover {
+  background-color: #3E54D8;
+  color: #fff;
+}
+
+.tariffs__countries-item + .tariffs__countries-item {
+  margin-left: 4px;
+}
+
+.tariffs__countries-item.get {
+  color: #fff;
+  background-color: #3E54D8;
 }
 
 .tariffs__title {
@@ -3116,6 +3252,14 @@ span.mark::before {
   body {
     font-size: 14px;
   }
+
+  .about__intro-link {
+    padding: 1.0555555556rem 3.0555555556rem;
+  }
+
+  .section-main .main-content-wrapper::before {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -3457,6 +3601,23 @@ span.mark::before {
     position: absolute;
     bottom: 4.3rem;
     width: 100%;
+  }
+
+  .section-main .main-content-block {
+    padding: 25px 25px;
+  }
+
+  .section-main .main-content-block .section_header {
+    margin-bottom: 25px;
+  }
+
+  .section-main .main-content-block-text {
+    margin-bottom: 35px;
+  }
+
+  .section-main .main-content-block-list {
+    padding: 0;
+    margin-bottom: 25px;
   }
 
   .section-main .main-img {
