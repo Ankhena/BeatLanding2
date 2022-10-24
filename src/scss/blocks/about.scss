@@ -1,68 +1,80 @@
 .about__intro {
-  padding-bottom: rem(200,18);
-  background: url("../img/about-intro-bg.svg") no-repeat top center / contain;
-  text-align: center;
+	padding-bottom: rem(200, 18);
+	background: url("../img/about-intro-bg.svg") no-repeat top center / contain;
+	text-align: center;
 
-  @media ($media_sm) {
-    padding-bottom: rem(80,14);
-  }
+	@media ($media_sm) {
+		padding-bottom: rem(80, 14);
+	}
 }
 
 .about__title {
-  text-align: center;
+	text-align: center;
 }
 
 .about__subtitle {
-  font-size: rem(22,18);
-  font-weight: 400;
-  text-align: center;
-  b {
-    font-weight: 600;
-  }
+	font-size: rem(22, 18);
+	font-weight: 400;
+	text-align: center;
+
+	b {
+		font-weight: 600;
+	}
 }
 
 .about__intro-link {
-  display: block;
-  width: fit-content;
-  margin-top: rem(31,18);
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: 600;
-  color: $color_blue;
-  text-decoration: none;
+	display: block;
+	width: fit-content;
+	margin-top: rem(31, 18);
+	padding: rem(29, 18) rem(155, 18);
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 600;
+	color: $color_white;
+	background-color: $color_blue;
+	text-decoration: none;
+	transition: background-color .3s;
+
+	&:hover {
+		background-color: $color_red;
+	}
+
+	@media($media_md) {
+		padding: rem(19, 18) rem(55, 18);
+	}
 }
 
 .about__bm-scoring {
-  position: relative;
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  align-items: center;
-  gap: 22px 16px;
-  padding: 34px 30px;
-  margin-top: -70px;
-  background: #FFFFFF;
-  border: 1px solid #E6EEFF;
-  box-shadow: 0 18px 16px -13px rgba(62, 84, 216, 0.1);
-  border-radius: 15px;
-  transform: translateY(50%);
+	position: relative;
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	align-items: center;
+	gap: 22px 16px;
+	padding: 34px 30px;
+	margin-top: -70px;
+	background: #FFFFFF;
+	border: 1px solid #E6EEFF;
+	box-shadow: 0 18px 16px -13px rgba(62, 84, 216, 0.1);
+	border-radius: 15px;
+	transform: translateY(50%);
 }
 
 .about__bm-scoring-btn {
-  position: absolute;
-  top: 0;
-  left: 120px;
-  transform: translateY(-50%);
-  display: block;
-  width: fit-content;
-  padding: rem(12,18) rem(30,18);
-  font-size: 1rem;
+	position: absolute;
+	top: 0;
+	left: 120px;
+	transform: translateY(-50%);
+	display: block;
+	width: fit-content;
+	padding: rem(12, 18) rem(30, 18);
+	font-size: 1rem;
 
-  border-radius: rem(30,18);
-  background: $color_yellow;
-  color: $color_white;
+	border-radius: rem(30, 18);
+	background: $color_yellow;
+	color: $color_white;
 
 }
 
 .about__gradient-bg {
-  background: linear-gradient(to bottom, #FFFFFF 0%, rgba(255, 255, 255, 0) 1560px);
+	background: linear-gradient(to bottom, #FFFFFF 0%, rgba(255, 255, 255, 0) 1560px);
 }
