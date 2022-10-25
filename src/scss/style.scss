@@ -22,8 +22,6 @@
 @import "blocks/beatmarket-title";
 @import "blocks/why-try";
 @import "blocks/should-try";
-@import "blocks/press";
-
 
 
 // === main ===
@@ -2078,70 +2076,6 @@
 	}
 
 }
-
-// === / app ===
-
-// ===  press ===
-
-.section-press {
-
-	.section-inner {}
-
-	&.spaceTop {
-		padding: 5.55rem 0 0 0;
-	}
-
-	.press {
-
-		&-header {
-			margin-bottom: 3.5rem;
-		}
-
-		&-cards {
-			display: grid;
-			grid-template-columns: repeat(6, 1fr);
-			gap: 1.33rem;
-
-			@media ($media_sm) {
-				grid-template-columns: repeat(2, 1fr);
-			}
-
-			&-card {
-				transition: 0.3s ease-in-out;
-				background: $color_bg_card;
-				border: 1px solid $color_border_secondary;
-				border-radius: 0.5rem;
-				padding: 0.2rem;
-				text-decoration: none;
-				min-height: 6.2rem;
-
-				@media ($media_xl) {
-					padding: 0.5rem;
-				}
-
-				@media ($media_sm) {
-					height: 6.5rem;
-					padding: 1rem;
-				}
-
-				display: flex;
-				justify-content: center;
-				align-items: center;
-
-				&:hover {
-					box-shadow: 0 40px 34px -21px rgba(62, 84, 216, 0.11);
-					transform: translateY(-0.5rem);
-				}
-
-				img {
-					max-width: 100%;
-				}
-			}
-		}
-	}
-}
-
-// === / press ===
 
 
 .h-positive {
