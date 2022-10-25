@@ -1,5 +1,17 @@
 // === header === [ Стили для навбара, используемые на всех страницах ] ===
 
+.section_header {
+    font-weight: bold;
+    font-size: 2.77rem;
+    color: $color_black_title;
+    text-align: center;
+
+    @media ($media_sm) {
+        font-size: 2.15rem;
+    }
+
+}
+
 .section-header {
     height: var(--header_height);
     display: flex;

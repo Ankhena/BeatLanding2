@@ -1,3 +1,94 @@
+.btn {
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.btn_primary {
+  background-color: $color_white;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 21px 22px -13px rgba(62, 84, 216, 0.22);
+}
+
+.btn_blue {
+  background-color: $color_blue;
+  color: $color_white;
+  box-shadow: 0 21px 22px -13px rgba(62, 84, 216, 0.51);
+  padding: 1.66rem 2.88rem;
+
+  &:hover, &:focus {
+    background-color: $color_blue_hover;
+  }
+
+  @media ($media_sm) {
+    width: 100%;
+    padding: 2rem 0;
+  }
+}
+
+.btn_bordered {
+  background: $color_bg_secondary;
+  border: 2px solid $color_border;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+
+  text-decoration: none;
+  color: $color_black_main;
+
+  svg {
+    height: 2.6rem;
+    width: 2.6rem;
+  }
+
+  span {
+    font-weight: 500;
+  }
+}
+
+.btn_subscribe {
+  background-color: $color_white;
+  box-shadow: 0 21px 22px -13px rgba(62, 84, 216, 0.22);
+  padding: 1.2rem 1.5rem;
+
+  @media ($media_sm) {
+    padding: 1.2rem 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    background-color: $color_blue;
+
+    svg {
+      fill: $color_white;
+    }
+
+    span {
+      color: $color_white;
+    }
+  }
+
+  svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: $color_blue;
+    margin-right: 1rem;
+  }
+
+  span {
+    color: $color_blue;
+  }
+}
+
 .btn--light {
   display: inline-block;
   vertical-align: middle;
