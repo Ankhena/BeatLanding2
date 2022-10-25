@@ -2511,26 +2511,18 @@ span.mark::before {
   color: #3E54D8;
 }
 
-.section-footer {
+.footer {
   background-color: #fff;
   padding: 2.7rem 0;
 }
 
-.section-footer .footer {
+.footer-inner {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: 2.5rem;
 }
 
-.section-footer .footer-contact,
-.section-footer .footer-text,
-.section-footer .footer-link {
-  line-height: 1.6;
-}
-
-.section-footer .footer-contact a,
-.section-footer .footer-text a,
-.section-footer .footer-link a {
+.footer-inner a {
   color: #3E54D8;
   font-weight: 500;
   text-decoration: none;
@@ -2538,44 +2530,37 @@ span.mark::before {
   transition: 0.3s ease-in-out;
 }
 
-.section-footer .footer-contact a:hover,
-.section-footer .footer-contact a:focus,
-.section-footer .footer-text a:hover,
-.section-footer .footer-text a:focus,
-.section-footer .footer-link a:hover,
-.section-footer .footer-link a:focus {
-  border-color: #3E54D8;
-}
-
-.section-footer .footer-logo {
+.footer-logo {
   width: 12rem;
 }
 
-.section-footer .footer-logo-icon {
+.footer-logo-icon {
   max-width: 100%;
 }
 
-.section-footer .footer-text {
+.footer-text {
   color: #929398;
 }
 
-.section-footer .footer-text strong {
+.footer-text strong {
   color: #3E54D8;
   font-weight: normal;
 }
 
-.section-footer .footer-contact,
-.section-footer .footer-link {
+.footer-link {
   display: inline-flex;
   flex-direction: column;
   justify-self: flex-start;
 }
 
-.section-footer .footer-contact {
+.footer-contact {
+  display: inline-flex;
+  flex-direction: column;
+  justify-self: flex-start;
   justify-content: space-around;
 }
 
-.section-footer .footer-link {
+.footer-link {
   justify-content: space-between;
   height: 4rem;
 }
@@ -3794,25 +3779,29 @@ span.mark::before {
     margin-top: 1.5rem;
   }
 
-  .section-footer {
+  .footer {
     padding: 2.7rem 0 0 0;
   }
 
-  .section-footer .footer {
+  .footer-inner {
     grid-template-columns: 1fr;
   }
 
-  .section-footer .footer-contact,
-  .section-footer .footer-logo {
+  .footer-logo {
     justify-self: center;
     text-align: center;
   }
 
-  .section-footer .footer-contact a {
+  .footer-contact {
+    justify-self: center;
+    text-align: center;
+  }
+
+  .footer-contact a {
     margin-top: 0.2rem;
   }
 
-  .section-footer .footer-link:last-child {
+  .footer-link:last-child {
     margin-top: -1.8rem;
   }
 
