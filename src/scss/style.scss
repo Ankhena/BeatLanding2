@@ -1,5 +1,6 @@
 @use "sass:math"; // для подключения модуля math в scss
 
+@import "./lib/variables";
 @import "./lib/normalize";
 @import "./lib/colors";
 @import "./lib/grid";
