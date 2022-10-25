@@ -1,4 +1,3 @@
-
 // используется для одинаковых отступов внутри секций
 :root {
   --section_padding: 6rem;
@@ -78,8 +77,6 @@ figure {
   }
 }
 
-
-
 .founder_header {
   font-weight: 600;
   font-size: 2.66rem;
@@ -138,7 +135,7 @@ span.mark {
 
 .checkbox_custom {
   position: relative;
-  width: 0px;
+  width: 0;
 
   &::before,
   &::after {
@@ -171,8 +168,6 @@ span.mark {
     }
   }
 }
-
-
 
 .input_text {
   background-color: $color_bg_secondary;
@@ -359,7 +354,8 @@ span.mark {
     padding: 2.5rem 0 0 0;
   }
 
-  .section-inner {}
+  .section-inner {
+  }
 
   .main {
     display: flex;
@@ -377,7 +373,8 @@ span.mark {
         margin-top: 0;
       }
 
-      &-header {}
+      &-header {
+      }
 
       &-text {
         padding: 3.33rem 0;
@@ -445,7 +442,7 @@ span.mark {
           content: '';
           width: 165px;
           height: 165px;
-          background: #ED6373;
+          background: #ed6373;
           border-radius: 50%;
           position: absolute;
           bottom: 20%;
@@ -458,7 +455,7 @@ span.mark {
       }
 
       &-block {
-        background-color: #FFFFFF;
+        background-color: #ffffff;
         border-radius: 18px;
         position: relative;
         overflow: hidden;
@@ -470,7 +467,7 @@ span.mark {
         }
 
         &-decor {
-          background-color: #F3B63F;
+          background-color: #f3b63f;
           border-radius: 50%;
           width: 148px;
           height: 148px;
@@ -506,7 +503,7 @@ span.mark {
           }
 
           li::before {
-            background-color: #3E54D8;
+            background-color: #3e54d8;
           }
         }
 
@@ -547,11 +544,13 @@ span.mark {
   background-repeat: no-repeat;
   background-position-x: center;
 
-  .section-inner {}
+  .section-inner {
+  }
 
   .excel {
 
-    &-header {}
+    &-header {
+    }
 
     &-text {
       width: 65%;
@@ -590,7 +589,8 @@ span.mark {
 .section-investors {
   padding-bottom: var(--section_padding);
 
-  .section-inner {}
+  .section-inner {
+  }
 
   .investors {
 
@@ -675,13 +675,13 @@ span.mark {
 
 // === / investors ===
 
-
 // === comfort ===
 
 .section-comfort {
   padding: var(--section_padding) 0;
 
-  .section-inner {}
+  .section-inner {
+  }
 
   .comfort {
 
@@ -781,7 +781,8 @@ span.mark {
   background-color: $color_white;
   padding: var(--section_padding) 0;
 
-  .section-inner {}
+  .section-inner {
+  }
 
   .trust {
 
@@ -928,13 +929,6 @@ span.mark {
 
 // === / trust ===
 
-
-
-
-
-
-
-
 // === founder ===
 
 .section-founder {
@@ -944,7 +938,8 @@ span.mark {
     padding: var(--section_padding) 0;
   }
 
-  .section-inner {}
+  .section-inner {
+  }
 
   .founder {
     display: flex;
@@ -961,7 +956,8 @@ span.mark {
         margin-top: 2rem;
       }
 
-      &-header {}
+      &-header {
+      }
 
       &-text {
         width: 80%;
@@ -978,7 +974,8 @@ span.mark {
         }
       }
 
-      &-btn {}
+      &-btn {
+      }
     }
 
     &-img {
@@ -1011,7 +1008,8 @@ span.mark {
     padding: var(--section_padding) 0;
   }
 
-  .section-inner {}
+  .section-inner {
+  }
 
   .investments {
 
@@ -1123,7 +1121,8 @@ span.mark {
 .section-platform {
   padding: var(--section_padding) 0;
 
-  .section-inner {}
+  .section-inner {
+  }
 
   .platform {
 
@@ -1228,7 +1227,8 @@ span.mark {
 .section-work {
   padding: var(--section_padding) 0;
 
-  .section-inner {}
+  .section-inner {
+  }
 
   .work {
     //background: red;
@@ -1317,7 +1317,8 @@ span.mark {
 .section-choose {
   padding-bottom: var(--section_padding);
 
-  .section-inner {}
+  .section-inner {
+  }
 
   .choose {
 
@@ -1378,7 +1379,8 @@ span.mark {
             }
           }
 
-          p {}
+          p {
+          }
         }
       }
     }
@@ -1401,7 +1403,8 @@ span.mark {
 .section-tarrifs {
   padding: calc(var(--section_padding) - 2rem) 0 var(--section_padding) 0;
 
-  .section-inner {}
+  .section-inner {
+  }
 
   .tarrifs {
 
@@ -1443,7 +1446,7 @@ span.mark {
       &-card {
         position: relative;
         overflow: hidden;
-        background-color: #FAFCFF;
+        background-color: #fafcff;
         border: 1px solid $color_border;
         border-radius: 0.9rem;
         padding: 1.8rem 1.5rem;
@@ -1613,7 +1616,7 @@ span.mark {
   &-info {
     font-weight: 600;
     font-size: 15px;
-    color: #24252E;
+    color: #24252e;
     margin-bottom: 14px;
   }
 
@@ -1622,28 +1625,28 @@ span.mark {
   }
 
   &-item {
-    background: #FFFFFF;
-    border: 1px solid #8C9BEA;
+    background: #ffffff;
+    border: 1px solid #8c9bea;
     border-radius: 8px;
     font-weight: 600;
     font-size: 14px;
     padding: 8px 16px;
-    color: #3E54D8;
+    color: #3e54d8;
     cursor: pointer;
     transition: background-color .3s, color .3s;
 
     &:hover {
-      background-color: #3E54D8;
+      background-color: #3e54d8;
       color: #fff;
     }
 
-    &+& {
+    & + & {
       margin-left: 4px;
     }
 
     &.get {
       color: #fff;
-      background-color: #3E54D8;
+      background-color: #3e54d8;
     }
   }
 }
@@ -1664,7 +1667,6 @@ span.mark {
 }
 
 .tariffs-free {
-
 
   ul {
     padding-left: 20px;
@@ -1714,7 +1716,8 @@ span.mark {
 .section-faq {
   padding: calc(var(--section_padding) - 2rem) 0 var(--section_padding) 0;
 
-  .section-inner {}
+  .section-inner {
+  }
 
   .faq {
     &-header {
@@ -1918,7 +1921,6 @@ span.mark {
 
 // === / faq ===
 
-
 // === advantages ===
 
 .section-advantages {
@@ -1929,7 +1931,8 @@ span.mark {
     margin-top: 0;
   }
 
-  .section-inner {}
+  .section-inner {
+  }
 
   .advantages {
 
@@ -2030,7 +2033,8 @@ span.mark {
   background-color: $color_white;
   margin: calc(var(--section_padding) / 1.5) 0;
 
-  .section-inner {}
+  .section-inner {
+  }
 
   .cryptocount {
     position: relative;
@@ -2158,7 +2162,8 @@ span.mark {
 
 .section-follow {
 
-  .section-inner {}
+  .section-inner {
+  }
 
   .follow {
 
@@ -2325,7 +2330,8 @@ span.mark {
 
 .section-app {
 
-  .section-inner {}
+  .section-inner {
+  }
 
   .app {
     display: flex;
@@ -2400,9 +2406,7 @@ span.mark {
       }
     }
   }
-
 }
-
 
 .h-positive {
   color: $color_green;
