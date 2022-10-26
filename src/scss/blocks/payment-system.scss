@@ -1,0 +1,28 @@
+.payment-system {
+  display: flex;
+  gap: 1.3em;
+  padding-left: 0;
+  list-style-type: none;
+
+  @media ($media_sm) {
+    justify-content: center;
+  }
+}
+
+.payment-system__item {
+
+  &::before {
+    content: var(--icon);
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &--visa {
+    --icon: var(--icon-visa);
+  }
+
+  &--mc {
+    --icon: var(--icon-master-card)
+  }
+}
+

@@ -1,0 +1,40 @@
+.address {
+  font-style: normal;
+}
+
+.address__list {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em 2em;
+
+  @media ($media_sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.address__item {
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    background: var(--icon) no-repeat center;
+  }
+
+  &--phone {
+    --icon: var(--icon-phone);
+  }
+
+  &--email {
+    --icon: var(--icon-mail);
+  }
+
+  &--address {
+    --icon: var(--icon-map-pin);
+    grid-column: 1/-1;
+    color: $color_gray;
+  }
+}
