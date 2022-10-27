@@ -3806,7 +3806,8 @@ span.mark::before {
     flex-direction: column;
   }
 
-  .section-header .header .dropdown .menu a {
+  .section-header .header .dropdown .menu > a,
+  .section-header .header .dropdown .menu > label {
     font-weight: 500;
     color: #3E54D8;
     text-decoration: none;
@@ -3815,16 +3816,13 @@ span.mark::before {
     align-items: center;
   }
 
-  .section-header .header .dropdown .menu a:not(:last-child) {
+  .section-header .header .dropdown .menu > a:not(:last-child),
+  .section-header .header .dropdown .menu > label:not(:last-child) {
     margin-bottom: 1.5rem;
   }
 
-  .section-header .header .dropdown .menu a label {
-    display: flex;
-    align-items: center;
-  }
-
-  .section-header .header .dropdown .menu a svg {
+  .section-header .header .dropdown .menu > a svg,
+  .section-header .header .dropdown .menu > label svg {
     width: 1rem;
     height: 1rem;
     stroke: #3E54D8;
